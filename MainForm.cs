@@ -32,6 +32,7 @@ namespace Writer
 		
 		void Button1Click(object sender, EventArgs e)
 		{
+			string timenow = DateTime.Now.ToString();
 //Create directory to save the text in.
 			Directory.CreateDirectory(@"Libraries\Documents\Writer");
 //Encrypting before it is saved into journal using personal algorythm.			
@@ -54,7 +55,7 @@ TextBox1.Text = TextBox1.Text.Replace("H", "á");
 TextBox1.Text = TextBox1.Text.Replace("J", "¥");
 TextBox1.Text = TextBox1.Text.Replace("K", "¶");
 TextBox1.Text = TextBox1.Text.Replace("L", "Þ");
-TextBox1.Text = TextBox1.Text.Replace("Z", "Ю");
+TextBox1.Text = TextBox1.Text.Replace("Z", "§");
 TextBox1.Text = TextBox1.Text.Replace("X", "҉");
 TextBox1.Text = TextBox1.Text.Replace("C", "Ҙ");
 TextBox1.Text = TextBox1.Text.Replace("V", "Ç");
@@ -92,8 +93,8 @@ TextBox1.Text = TextBox1.Text.Replace("m", "◙");
 
 
 //String with dateTime and the input textBox to be added to the file.
-string news = Environment.NewLine + DateTime.Now + Environment.NewLine + TextBox1.Text + Environment.NewLine;
-
+string news = Environment.NewLine + DateTime.Now +Environment.NewLine + TextBox1.Text + Environment.NewLine;
+			TextBox1.Text += timenow;
 			//Using my own encryption tool to encrypt.
 			//Now writing encrypted file to the test.txt file I have created.
 			System.IO.StreamWriter file = new System.IO.StreamWriter(@"Libraries\Documents\Writer\updated.txt", true);
@@ -140,7 +141,7 @@ TextBox1.Text = TextBox1.Text.Replace("á", "H");
 TextBox1.Text = TextBox1.Text.Replace("¥", "J");
 TextBox1.Text = TextBox1.Text.Replace("¶", "K");
 TextBox1.Text = TextBox1.Text.Replace("Þ", "L");
-TextBox1.Text = TextBox1.Text.Replace("Ю", "Z");
+TextBox1.Text = TextBox1.Text.Replace("§", "Z");
 TextBox1.Text = TextBox1.Text.Replace("҉", "X");
 TextBox1.Text = TextBox1.Text.Replace("Ҙ", "C");
 TextBox1.Text = TextBox1.Text.Replace("Ç", "V");

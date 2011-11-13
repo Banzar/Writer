@@ -1,0 +1,8 @@
+C:\Users\lucky\Documents\SharpDevelop Projects\Writer\Writer\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\lucky\Documents\SharpDevelop Projects\Writer\Writer\obj\x86\Debug\Writer.MainForm.resources
+C:\Users\lucky\Documents\SharpDevelop Projects\Writer\Writer\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\lucky\Documents\SharpDevelop Projects\Writer\Writer\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\lucky\Documents\SharpDevelop Projects\Writer\Writer\bin\Debug\Writer.exe
+C:\Users\lucky\Documents\SharpDevelop Projects\Writer\Writer\bin\Debug\Writer.pdb
+C:\Users\lucky\Documents\SharpDevelop Projects\Writer\Writer\obj\x86\Debug\Writer.exe
+C:\Users\lucky\Documents\SharpDevelop Projects\Writer\Writer\obj\x86\Debug\Writer.pdb
