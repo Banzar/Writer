@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Created by SharpDevelop.
  * User: David Ledford
  Date: 11/5/2011
@@ -88,7 +88,7 @@ TextBox1.Text = TextBox1.Text.Replace("x", "╚");
 TextBox1.Text = TextBox1.Text.Replace("c", "☼");
 TextBox1.Text = TextBox1.Text.Replace("v", "♠");
 TextBox1.Text = TextBox1.Text.Replace("b", "Ⱨ");
-TextBox1.Text = TextBox1.Text.Replace("n", "סּ");
+TextBox1.Text = TextBox1.Text.Replace("n", "סּ");
 TextBox1.Text = TextBox1.Text.Replace("m", "◙");
 
 
@@ -174,7 +174,7 @@ TextBox1.Text = TextBox1.Text.Replace("╚", "x");
 TextBox1.Text = TextBox1.Text.Replace("☼", "c");
 TextBox1.Text = TextBox1.Text.Replace("♠", "v");
 TextBox1.Text = TextBox1.Text.Replace("Ⱨ", "b");
-TextBox1.Text = TextBox1.Text.Replace("סּ", "n");
+TextBox1.Text = TextBox1.Text.Replace("סּ", "n");
 TextBox1.Text = TextBox1.Text.Replace("◙", "m");
 
 
@@ -186,6 +186,5 @@ TextBox1.Text = TextBox1.Text.Replace("◙", "m");
 			}
 		}
 
-}
 	}
-
+}
