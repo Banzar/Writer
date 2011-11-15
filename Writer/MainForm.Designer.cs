@@ -89,7 +89,7 @@ namespace Writer
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(136, 39);
 			this.button2.TabIndex = 4;
-			this.button2.Text = "Cancel";
+			this.button2.Text = "Close";
 			this.button2.UseVisualStyleBackColor = false;
 			this.button2.Click += new System.EventHandler(this.Button2Click);
 			// 
@@ -102,6 +102,7 @@ namespace Writer
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.CancelButton = this.button2;
 			this.ClientSize = new System.Drawing.Size(606, 473);
+			this.ControlBox = false;
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.checkBox1);
 			this.Controls.Add(this.Button1);
