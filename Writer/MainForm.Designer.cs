@@ -45,12 +45,14 @@ namespace Writer
 			// 
 			// TextBox1
 			// 
+			this.TextBox1.BackColor = System.Drawing.SystemColors.Window;
+			this.TextBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
 			this.TextBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.TextBox1.Location = new System.Drawing.Point(12, 45);
+			this.TextBox1.Location = new System.Drawing.Point(0, 33);
 			this.TextBox1.Multiline = true;
 			this.TextBox1.Name = "TextBox1";
 			this.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.TextBox1.Size = new System.Drawing.Size(584, 399);
+			this.TextBox1.Size = new System.Drawing.Size(521, 331);
 			this.TextBox1.TabIndex = 0;
 			// 
 			// Button1
@@ -58,9 +60,9 @@ namespace Writer
 			this.Button1.BackColor = System.Drawing.SystemColors.Control;
 			this.Button1.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Button1.ForeColor = System.Drawing.SystemColors.InfoText;
-			this.Button1.Location = new System.Drawing.Point(12, 0);
+			this.Button1.Location = new System.Drawing.Point(0, -1);
 			this.Button1.Name = "Button1";
-			this.Button1.Size = new System.Drawing.Size(136, 39);
+			this.Button1.Size = new System.Drawing.Size(138, 28);
 			this.Button1.TabIndex = 1;
 			this.Button1.Text = "Write to Journal";
 			this.Button1.UseVisualStyleBackColor = false;
@@ -71,7 +73,7 @@ namespace Writer
 			this.checkBox1.BackColor = System.Drawing.SystemColors.HighlightText;
 			this.checkBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("checkBox1.BackgroundImage")));
 			this.checkBox1.ForeColor = System.Drawing.SystemColors.HighlightText;
-			this.checkBox1.Location = new System.Drawing.Point(500, 450);
+			this.checkBox1.Location = new System.Drawing.Point(214, 11);
 			this.checkBox1.Name = "checkBox1";
 			this.checkBox1.Size = new System.Drawing.Size(96, 16);
 			this.checkBox1.TabIndex = 3;
@@ -85,9 +87,9 @@ namespace Writer
 			this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.button2.ForeColor = System.Drawing.SystemColors.InfoText;
-			this.button2.Location = new System.Drawing.Point(458, 0);
+			this.button2.Location = new System.Drawing.Point(385, 0);
 			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(136, 39);
+			this.button2.Size = new System.Drawing.Size(136, 27);
 			this.button2.TabIndex = 4;
 			this.button2.Text = "Close";
 			this.button2.UseVisualStyleBackColor = false;
@@ -97,17 +99,18 @@ namespace Writer
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.SystemColors.Control;
+			this.BackColor = System.Drawing.SystemColors.ButtonFace;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.CancelButton = this.button2;
-			this.ClientSize = new System.Drawing.Size(606, 473);
-			this.ControlBox = false;
+			this.ClientSize = new System.Drawing.Size(521, 364);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.checkBox1);
 			this.Controls.Add(this.Button1);
 			this.Controls.Add(this.TextBox1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.MaximizeBox = false;
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Writer";

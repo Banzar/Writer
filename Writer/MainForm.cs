@@ -33,7 +33,7 @@ namespace Writer
 		{
 			string timenow = DateTime.Now.ToString();
 //Create directory to save the text in.
-			Directory.CreateDirectory(@"Libraries\Documents\Writer");
+			Directory.CreateDirectory(@"documents");
 //Encrypting before it is saved into journal using personal algorythm.			
 TextBox1.Text = TextBox1.Text.Replace("Q", "Ê");
 TextBox1.Text = TextBox1.Text.Replace("W", "©");
@@ -92,11 +92,10 @@ TextBox1.Text = TextBox1.Text.Replace("m", "◙");
 
 
 //String with dateTime and the input textBox to be added to the file.
-string news = Environment.NewLine + DateTime.Now +Environment.NewLine + TextBox1.Text + Environment.NewLine;
-			TextBox1.Text += timenow;
+string news = DateTime.Now + Environment.NewLine + TextBox1.Text + Environment.NewLine;
 			//Using my own encryption tool to encrypt.
 			//Now writing encrypted file to the test.txt file I have created.
-			System.IO.StreamWriter file = new System.IO.StreamWriter(@"Libraries\Documents\Writer\updated.txt", true);
+			System.IO.StreamWriter file = new System.IO.StreamWriter(@"documents\updated.txt", true);
 			file.Write(news);
 			file.Close();
 			TextBox1.Clear();
@@ -115,7 +114,7 @@ string news = Environment.NewLine + DateTime.Now +Environment.NewLine + TextBox1
 			if (checkBox1.Checked == true)
 			{
 			 System.IO.StreamReader myFile =
-  			 new System.IO.StreamReader(@"Libraries\Documents\Writer\updated.txt");
+  			 new System.IO.StreamReader(@"documents\updated.txt");
 			 string myString = myFile.ReadToEnd();
 			 TextBox1.Text = myString;
 			 myFile.Close();
