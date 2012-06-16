@@ -26,14 +26,18 @@ namespace Writer
 			
 		{
 			InitializeComponent();
+//Create directory to save the text in.
+			Directory.CreateDirectory(@"C:/Users/" + Environment.UserName + "/Documents/");
+			
+			System.IO.StreamWriter makefile = new System.IO.StreamWriter(@"C:/Users/" + Environment.UserName + "/Documents/Writer.txt", true);
+			makefile.Write("");
+			makefile.Close();
 		}
 	
-		
+
 		void Button1Click(object sender, EventArgs e)
 		{
-			string timenow = DateTime.Now.ToString();
-//Create directory to save the text in.
-			Directory.CreateDirectory(@"documents");
+
 //Encrypting before it is saved into journal using personal algorythm.			
 TextBox1.Text = TextBox1.Text.Replace("Q", "Ê");
 TextBox1.Text = TextBox1.Text.Replace("W", "©");
@@ -95,7 +99,7 @@ TextBox1.Text = TextBox1.Text.Replace("m", "◙");
 string news = DateTime.Now + Environment.NewLine + TextBox1.Text + Environment.NewLine;
 			//Using my own encryption tool to encrypt.
 			//Now writing encrypted file to the test.txt file I have created.
-			System.IO.StreamWriter file = new System.IO.StreamWriter(@"documents\updated.txt", true);
+			System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:/Users/" + Environment.UserName + "/Documents/Writer.txt", true);
 			file.Write(news);
 			file.Close();
 			TextBox1.Clear();
@@ -114,7 +118,7 @@ string news = DateTime.Now + Environment.NewLine + TextBox1.Text + Environment.N
 			if (checkBox1.Checked == true)
 			{
 			 System.IO.StreamReader myFile =
-  			 new System.IO.StreamReader(@"documents\updated.txt");
+  			 new System.IO.StreamReader(@"C:/Users/" + Environment.UserName + "/Documents/Writer.txt");
 			 string myString = myFile.ReadToEnd();
 			 TextBox1.Text = myString;
 			 myFile.Close();
